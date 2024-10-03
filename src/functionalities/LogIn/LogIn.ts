@@ -91,7 +91,7 @@ const LogInResolver: LogIn_Resolver_Interface = async (
         email: user.email,
       },
       TOKEN_SECRET,
-      { expiresIn: '1h' }
+      { expiresIn: '24h' }
     );
 
     return {

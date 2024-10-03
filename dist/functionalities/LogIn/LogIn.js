@@ -53,7 +53,7 @@ const LogInResolver = async (parent, { email, password }, context, info) => {
         const token = jsonwebtoken_1.default.sign({
             userId: user.id.toString(),
             email: user.email,
-        }, env_1.TOKEN_SECRET, { expiresIn: '1h' });
+        }, env_1.TOKEN_SECRET, { expiresIn: '24h' });
         return {
             token,
             _id: user.id.toString(),

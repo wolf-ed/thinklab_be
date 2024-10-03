@@ -17,7 +17,7 @@ import {
 import {
   GRAPHQL_MUTATION_NAME_POST,
   GrapQLPostMutation,
-} from '../functionalities/Posts/Posts';
+} from '../functionalities/Posts/SavePost';
 import {
   GRAPHQL_QUERY_NAME_GET_POSTS,
   GrapQLGetPostsQuery,

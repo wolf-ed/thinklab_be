@@ -64,6 +64,7 @@ const PostResolver: Post_Resolver_Interface = async (
   if (!title || !content || !visibility) {
     throw new ApiError('Title, content, and visibility are required', 400);
   }
+
   if (id) {
     const existingPost: PostInterface | null = await Post.findById(id);
 
